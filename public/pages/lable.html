@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" href="../fonts/font-awesome-4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="../css/lable.css"/>
+		<style type="text/css">
+			     *{
+			         margin: 0;
+			         padding: 0;
+			     }
+			     li{
+			         list-style: none;
+			     }
+			     a{
+			         text-decoration: none;
+			     }
+			  
+			 header{
+			     position: fixed;
+			     top: 0;
+					 z-index: 999;
+			     width: 100%;
+			     height: 80px;
+			     background: #ffffff;
+			     box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+			 }
+			header>nav{
+			     width: 80%;
+			     margin: 0 auto;
+			     line-height: 80px;
+			   height: 80px;
+			 }
+			 header .logo{
+			     float: left;
+			     height: 80px;
+			 }
+			 header .logo a{
+			     float: left;
+			     height: 80px;
+			 }
+			 header .logo img{
+			     width: 80px;
+			     height: 80px;
+			 }
+			 .header-list{
+			     width: 100%;
+			     float: left;
+			   
+			 }
+			  
+			  
+			 .header-left-list li{
+			     float: left;
+			     margin: 0 20px 0;
+			     
+			 }
+			 .header-left-list li a{
+			     font-size: 18px;
+			 }
+			 header a{
+			     color: #F05154;
+			 }
+			 .header-left-list li a:hover{
+			    padding-bottom: 3px;
+			     border-bottom:3px solid #F05154;
+			 }
+			 .header-userBox{
+			     float: right;
+			  
+			     transition: all 0.3s linear;
+			 }
+			 .header-userBox li{
+			     float: left;
+			     margin:0 10px 0;
+			 }
+			 .header-userBox span{
+			     font-size: 18px;
+			     margin: 0;
+			 }
+			 #headerSearchInput{
+			     border: none;
+			     border-bottom: 2px solid #F05154;
+			    padding-bottom: 5px;
+			 }
+			 #headerDropDown{
+			
+			     float: right;
+			     font-size: 30px;
+			     display: none;
+			 }
+			 footer{
+					 width: 100%;
+					 overflow: hidden;
+			     background:  #F05154;
+			     padding-top: 30px;
+			     padding-bottom: 30px;
+			     font-family: "微软雅黑";
+			     font-size: 18px;
+			     text-align: center;
+			     color: white;
+			 }
+			 footer a{
+			     text-decoration: none;
+			     color: white;
+			 }
+			 footer a:hover{
+			     text-decoration: underline;
+			 }
+			 
+			 .footer-logoBox img{
+			     width: 80px;
+			     height:80px;
+			 }
+			 footer .content{
+			 
+			     width: 80%;
+			     margin: 0 auto;
+			 }
+			 @media screen and (max-width:992px){
+			    footer{
+			     font-size: 16px;
+			    }
+			 }
+			 @media screen and (max-width:768px){
+			    footer{
+			     font-size: 12px;
+			    }
+			 }
+			 @media screen and (max-width:992px) {
+			         .header-userBox{
+			          display: none;
+			         }
+			         .header-left-list{
+			             display: none;
+			         }
+			         #headerDropDown{
+			             display: block;
+			         }
+			 }
+			
+		</style>
+	</head>
+	<body>
+			<!-- header -->
+			<header>
+			        <nav>
+			       
+			        <div class="header-list">
+			            <div class="logo">
+			                <a href="">
+			                    <img src="../images/wsx-img/icon.png" alt="">
+			                </a>
+			               
+			            </div>
+			            <ul class="header-left-list">
+			                <li><a href="#">首页</a></li>
+			                <li><a href="#">蛋糕</a></li>
+			                <li><a href="#">面包</a></li>
+			                <li><a href="#">饼干</a></li>
+			                <li><a href="#">饮品</a></li>
+			               
+			            </ul>
+			            <ul class="header-userBox">
+			                    <li class="header-search">
+			                        <input type="search" placeholder="请输入想要查找的内容" id="headerSearchInput">
+			                        <a href="#">
+			                            <span class="fa fa-search" aria-hidden="true">
+			                            </span>
+			                         </a>
+			                    </li>
+			                    <li>
+			                        <a href="">
+			                            <span class="fa fa-bell"></span>
+			                        </a>
+			                    </li>
+			                    <li>
+			                        <a href="">
+			                            <span class="fa fa-user"></span>
+			                        </a>
+			                    </li>
+			                    <li>
+			                        <a href="">
+			                        <span class="fa fa-shopping-cart"></span>
+			                    </a>
+			                    </li>
+			            </ul>
+			            <div id="headerDropDown">
+			                <a href="">
+			                    <span class="fa fa-bars"></span>
+			                </a>
+			            </div>
+			        </div>
+			        </nav>
+			</header>
+			<!-- header -->
+			
+			<section class="container">
+				<div class="lable-img">
+					<img src="../images/wsx-img/lable1.jpg" alt="">
+				</div>
+				
+				<div class="tag-title">
+					<h1>情侣</h1>
+				</div>
+				
+				<!-- 商品列表 start -->
+				<div class="list-box">
+					<ul class="goods-list">
+						<li class="goods-show">
+							<a href="javascript:;">
+								<div class="good-img-box">
+									<img src="../images/wsx-img/tip1.png"  class="tips-img">
+									<img class="goods-img" src="../images/wsx-img/cake1.jpg" >
+								</div>
+								<h3 class="goods-name">深爱</h3>
+								<span class="goods-price">¥268.00/454g(1.0磅)</span>
+							</a>
+							<div class="lable-enter">
+								<a href="javascript:;" class="lables">情侣&gt;</a>
+								<a href="javascript:;" class="lables">聚会&gt;</a>
+							</div>
+							<a href="javascript:;" class="add-carts">
+								<i></i>
+								加入购物车
+							</a>
+							<!-- 点击购物出现的窗口	start -->
+							<div class="hide-content">
+								<h4>￥298.00</h4>
+								<div class="tast">
+									<p class="tast-title">口味</p>
+									<ul class="tast-list">
+										<li class="active">树莓果酱 <i></i></li>
+										<li>树莓果酱 <i></i></li>
+										<li>更多&gt;</li>
+									</ul>
+								</div>
+								<div class="goods-spec">
+									<p class="tast-title">商品规格</p>
+									<ul class="spec-list">
+										<li class="active">
+											<span>454g</span>(1.0磅)
+											<i></i>
+										</li>
+										<li>
+											<span>454g</span>(1.0磅)
+											<i></i>
+										</li>
+									</ul>
+								</div>
+								
+								<div class="buy-button">
+									<button type="button" class="buy-now-btn">立即购买</button>
+									<button type="button" class="add-cart-btn">加入购物车</button>
+								</div>
+								
+							</div>
+							<!-- 点击购物出现的窗口	end -->
+							<!-- 添加购物车成功弹窗 -->
+							<div class="add-success">
+								<div class="success-icon-cont">
+									<i class="success-icon"></i>
+									<span>添加购物车成功！</span>
+								</div>
+								
+								<p class="go-to-cart">查看购物车</p>
+							</div>
+						</li>
+						<li class="goods-show">
+							<a href="javascript:;">
+								<div class="good-img-box">
+									<img src="../images/wsx-img/tip1.png"  class="tips-img">
+									<img class="goods-img" src="../images/wsx-img/cake1.jpg" >
+								</div>
+								<h3 class="goods-name">深爱</h3>
+								<span class="goods-price">¥268.00/454g(1.0磅)</span>
+							</a>
+							<div class="lable-enter">
+								<a href="javascript:;" class="lables">情侣&gt;</a>
+								<a href="javascript:;" class="lables">聚会&gt;</a>
+							</div>
+							<a href="javascript:;" class="add-carts">
+								<i></i>
+								加入购物车
+							</a>
+							<!-- 点击购物出现的窗口	start -->
+							<div class="hide-content">
+								<h4>￥298.00</h4>
+								<div class="tast">
+									<p class="tast-title">口味</p>
+									<ul class="tast-list">
+										<li class="active">树莓果酱 <i></i></li>
+										<li>树莓果酱 <i></i></li>
+										<li>更多&gt;</li>
+									</ul>
+								</div>
+								<div class="goods-spec">
+									<p class="tast-title">商品规格</p>
+									<ul class="spec-list">
+										<li class="active">
+											<span>454g</span>(1.0磅)
+											<i></i>
+										</li>
+										<li>
+											<span>454g</span>(1.0磅)
+											<i></i>
+										</li>
+									</ul>
+								</div>
+								
+								<div class="buy-button">
+									<button type="button" class="buy-now-btn">立即购买</button>
+									<button type="button" class="add-cart-btn">加入购物车</button>
+								</div>
+								
+							</div>
+							<!-- 点击购物出现的窗口	end -->
+							<!-- 添加购物车成功弹窗 -->
+							<div class="add-success">
+								<div class="success-icon-cont">
+									<i class="success-icon"></i>
+									<span>添加购物车成功！</span>
+								</div>
+								
+								<p class="go-to-cart">查看购物车</p>
+							</div>
+						</li>
+						<li class="goods-show">
+							<a href="javascript:;">
+								<div class="good-img-box">
+									<img src="../images/wsx-img/tip1.png"  class="tips-img">
+									<img class="goods-img" src="../images/wsx-img/cake1.jpg" >
+								</div>
+								<h3 class="goods-name">深爱</h3>
+								<span class="goods-price">¥268.00/454g(1.0磅)</span>
+							</a>
+							<div class="lable-enter">
+								<a href="javascript:;" class="lables">情侣&gt;</a>
+								<a href="javascript:;" class="lables">聚会&gt;</a>
+							</div>
+							<a href="javascript:;" class="add-carts">
+								<i></i>
+								加入购物车
+							</a>
+							<!-- 点击购物出现的窗口	start -->
+							<div class="hide-content">
+								<h4>￥298.00</h4>
+								<div class="tast">
+									<p class="tast-title">口味</p>
+									<ul class="tast-list">
+										<li class="active">树莓果酱 <i></i></li>
+										<li>树莓果酱 <i></i></li>
+										<li>更多&gt;</li>
+									</ul>
+								</div>
+								<div class="goods-spec">
+									<p class="tast-title">商品规格</p>
+									<ul class="spec-list">
+										<li class="active">
+											<span>454g</span>(1.0磅)
+											<i></i>
+										</li>
+										<li>
+											<span>454g</span>(1.0磅)
+											<i></i>
+										</li>
+									</ul>
+								</div>
+								
+								<div class="buy-button">
+									<button type="button" class="buy-now-btn">立即购买</button>
+									<button type="button" class="add-cart-btn">加入购物车</button>
+								</div>
+								
+							</div>
+							<!-- 点击购物出现的窗口	end -->
+							<!-- 添加购物车成功弹窗 -->
+							<div class="add-success">
+								<div class="success-icon-cont">
+									<i class="success-icon"></i>
+									<span>添加购物车成功！</span>
+								</div>
+								
+								<p class="go-to-cart">查看购物车</p>
+							</div>
+						</li>
+						<li class="goods-show">
+							<a href="javascript:;">
+								<div class="good-img-box">
+									<img src="../images/wsx-img/tip1.png"  class="tips-img">
+									<img class="goods-img" src="../images/wsx-img/cake1.jpg" >
+								</div>
+								<h3 class="goods-name">深爱</h3>
+								<span class="goods-price">¥268.00/454g(1.0磅)</span>
+							</a>
+							<div class="lable-enter">
+								<a href="javascript:;" class="lables">情侣&gt;</a>
+								<a href="javascript:;" class="lables">聚会&gt;</a>
+							</div>
+							<a href="javascript:;" class="add-carts">
+								<i></i>
+								加入购物车
+							</a>
+							<!-- 点击购物出现的窗口	start -->
+							<div class="hide-content">
+								<h4>￥298.00</h4>
+								<div class="tast">
+									<p class="tast-title">口味</p>
+									<ul class="tast-list">
+										<li class="active">树莓果酱 <i></i></li>
+										<li>树莓果酱 <i></i></li>
+										<li>更多&gt;</li>
+									</ul>
+								</div>
+								<div class="goods-spec">
+									<p class="tast-title">商品规格</p>
+									<ul class="spec-list">
+										<li class="active">
+											<span>454g</span>(1.0磅)
+											<i></i>
+										</li>
+										<li>
+											<span>454g</span>(1.0磅)
+											<i></i>
+										</li>
+									</ul>
+								</div>
+								
+								<div class="buy-button">
+									<button type="button" class="buy-now-btn">立即购买</button>
+									<button type="button" class="add-cart-btn">加入购物车</button>
+								</div>
+								
+							</div>
+							<!-- 点击购物出现的窗口	end -->
+							<!-- 添加购物车成功弹窗 -->
+							<div class="add-success">
+								<div class="success-icon-cont">
+									<i class="success-icon"></i>
+									<span>添加购物车成功！</span>
+								</div>
+								
+								<p class="go-to-cart">查看购物车</p>
+							</div>
+						</li>
+						<li class="goods-show">
+							<a href="javascript:;">
+								<div class="good-img-box">
+									<img src="../images/wsx-img/tip1.png"  class="tips-img">
+									<img class="goods-img" src="../images/wsx-img/cake1.jpg" >
+								</div>
+								<h3 class="goods-name">深爱</h3>
+								<span class="goods-price">¥268.00/454g(1.0磅)</span>
+							</a>
+							<div class="lable-enter">
+								<a href="javascript:;" class="lables">情侣&gt;</a>
+								<a href="javascript:;" class="lables">聚会&gt;</a>
+							</div>
+							<a href="javascript:;" class="add-carts">
+								<i></i>
+								加入购物车
+							</a>
+							<!-- 点击购物出现的窗口	start -->
+							<div class="hide-content">
+								<h4>￥298.00</h4>
+								<div class="tast">
+									<p class="tast-title">口味</p>
+									<ul class="tast-list">
+										<li class="active">树莓果酱 <i></i></li>
+										<li>树莓果酱 <i></i></li>
+										<li>更多&gt;</li>
+									</ul>
+								</div>
+								<div class="goods-spec">
+									<p class="tast-title">商品规格</p>
+									<ul class="spec-list">
+										<li class="active">
+											<span>454g</span>(1.0磅)
+											<i></i>
+										</li>
+										<li>
+											<span>454g</span>(1.0磅)
+											<i></i>
+										</li>
+									</ul>
+								</div>
+								
+								<div class="buy-button">
+									<button type="button" class="buy-now-btn">立即购买</button>
+									<button type="button" class="add-cart-btn">加入购物车</button>
+								</div>
+								
+							</div>
+							<!-- 点击购物出现的窗口	end -->
+							<!-- 添加购物车成功弹窗 -->
+							<div class="add-success">
+								<div class="success-icon-cont">
+									<i class="success-icon"></i>
+									<span>添加购物车成功！</span>
+								</div>
+								
+								<p class="go-to-cart">查看购物车</p>
+							</div>
+						</li>
+						<li class="goods-show">
+							<a href="javascript:;">
+								<div class="good-img-box">
+									<img src="../images/wsx-img/tip1.png"  class="tips-img">
+									<img class="goods-img" src="../images/wsx-img/cake1.jpg" >
+								</div>
+								<h3 class="goods-name">深爱</h3>
+								<span class="goods-price">¥268.00/454g(1.0磅)</span>
+							</a>
+							<div class="lable-enter">
+								<a href="javascript:;" class="lables">情侣&gt;</a>
+								<a href="javascript:;" class="lables">聚会&gt;</a>
+							</div>
+							<a href="javascript:;" class="add-carts">
+								<i></i>
+								加入购物车
+							</a>
+							<!-- 点击购物出现的窗口	start -->
+							<div class="hide-content">
+								<h4>￥298.00</h4>
+								<div class="tast">
+									<p class="tast-title">口味</p>
+									<ul class="tast-list">
+										<li class="active">树莓果酱 <i></i></li>
+										<li>树莓果酱 <i></i></li>
+										<li>更多&gt;</li>
+									</ul>
+								</div>
+								<div class="goods-spec">
+									<p class="tast-title">商品规格</p>
+									<ul class="spec-list">
+										<li class="active">
+											<span>454g</span>(1.0磅)
+											<i></i>
+										</li>
+										<li>
+											<span>454g</span>(1.0磅)
+											<i></i>
+										</li>
+									</ul>
+								</div>
+								
+								<div class="buy-button">
+									<button type="button" class="buy-now-btn">立即购买</button>
+									<button type="button" class="add-cart-btn">加入购物车</button>
+								</div>
+								
+							</div>
+							<!-- 点击购物出现的窗口	end -->
+							<!-- 添加购物车成功弹窗 -->
+							<div class="add-success">
+								<div class="success-icon-cont">
+									<i class="success-icon"></i>
+									<span>添加购物车成功！</span>
+								</div>
+								
+								<p class="go-to-cart">查看购物车</p>
+							</div>
+						</li>
+						<li class="goods-show">
+							<a href="javascript:;">
+								<div class="good-img-box">
+									<img src="../images/wsx-img/tip1.png"  class="tips-img">
+									<img class="goods-img" src="../images/wsx-img/cake1.jpg" >
+								</div>
+								<h3 class="goods-name">深爱</h3>
+								<span class="goods-price">¥268.00/454g(1.0磅)</span>
+							</a>
+							<div class="lable-enter">
+								<a href="javascript:;" class="lables">情侣&gt;</a>
+								<a href="javascript:;" class="lables">聚会&gt;</a>
+							</div>
+							<a href="javascript:;" class="add-carts">
+								<i></i>
+								加入购物车
+							</a>
+							<!-- 点击购物出现的窗口	start -->
+							<div class="hide-content">
+								<h4>￥298.00</h4>
+								<div class="tast">
+									<p class="tast-title">口味</p>
+									<ul class="tast-list">
+										<li class="active">树莓果酱 <i></i></li>
+										<li>树莓果酱 <i></i></li>
+										<li>更多&gt;</li>
+									</ul>
+								</div>
+								<div class="goods-spec">
+									<p class="tast-title">商品规格</p>
+									<ul class="spec-list">
+										<li class="active">
+											<span>454g</span>(1.0磅)
+											<i></i>
+										</li>
+										<li>
+											<span>454g</span>(1.0磅)
+											<i></i>
+										</li>
+									</ul>
+								</div>
+								
+								<div class="buy-button">
+									<button type="button" class="buy-now-btn">立即购买</button>
+									<button type="button" class="add-cart-btn">加入购物车</button>
+								</div>
+								
+							</div>
+							<!-- 点击购物出现的窗口	end -->
+							<!-- 添加购物车成功弹窗 -->
+							<div class="add-success">
+								<div class="success-icon-cont">
+									<i class="success-icon"></i>
+									<span>添加购物车成功！</span>
+								</div>
+								
+								<p class="go-to-cart">查看购物车</p>
+							</div>
+						</li>
+						<li class="goods-show">
+							<a href="javascript:;">
+								<div class="good-img-box">
+									<img src="../images/wsx-img/tip1.png"  class="tips-img">
+									<img class="goods-img" src="../images/wsx-img/cake1.jpg" >
+								</div>
+								<h3 class="goods-name">深爱</h3>
+								<span class="goods-price">¥268.00/454g(1.0磅)</span>
+							</a>
+							<div class="lable-enter">
+								<a href="javascript:;" class="lables">情侣&gt;</a>
+								<a href="javascript:;" class="lables">聚会&gt;</a>
+							</div>
+							<a href="javascript:;" class="add-carts">
+								<i></i>
+								加入购物车
+							</a>
+							<!-- 点击购物出现的窗口	start -->
+							<div class="hide-content">
+								<h4>￥298.00</h4>
+								<div class="tast">
+									<p class="tast-title">口味</p>
+									<ul class="tast-list">
+										<li class="active">树莓果酱 <i></i></li>
+										<li>树莓果酱 <i></i></li>
+										<li>更多&gt;</li>
+									</ul>
+								</div>
+								<div class="goods-spec">
+									<p class="tast-title">商品规格</p>
+									<ul class="spec-list">
+										<li class="active">
+											<span>454g</span>(1.0磅)
+											<i></i>
+										</li>
+										<li>
+											<span>454g</span>(1.0磅)
+											<i></i>
+										</li>
+									</ul>
+								</div>
+								
+								<div class="buy-button">
+									<button type="button" class="buy-now-btn">立即购买</button>
+									<button type="button" class="add-cart-btn">加入购物车</button>
+								</div>
+								
+							</div>
+							<!-- 点击购物出现的窗口	end -->
+							<!-- 添加购物车成功弹窗 -->
+							<div class="add-success">
+								<div class="success-icon-cont">
+									<i class="success-icon"></i>
+									<span>添加购物车成功！</span>
+								</div>
+								
+								<p class="go-to-cart">查看购物车</p>
+							</div>
+						</li>
+						
+						
+						
+					</ul>
+				</div>
+				<!-- 商品列表 end -->
+			</section>
+			
+			
+			<!-- footer -->
+			
+			<footer>
+			    <div class="content">
+			      
+			        <div class="footer-txtBox">
+			            <p>订购专线:<a href="tel:13699466635">xxxxxxxxx</a></p>
+			            <p>客服电话:<a href="tel:13699466635">xxxxxxxxx</a></p>
+			            <p>当日蛋糕配送截止下单时间：北京/上海：16:30；杭州/广州：14:00；天津：10:30；苏州/无锡/深圳：11:00</p>
+			            <p>Copyright© xinyi蛋糕官网商城 2007-2019, 版权所有 京ICP备xxx号-x</p>
+			        </div>
+			    </div>
+			  
+			</footer>
+	</body>
+	<script src="../util/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/lable.js" type="text/javascript" charset="utf-8"></script>
+</html>
+
+

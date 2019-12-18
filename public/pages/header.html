@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../util/font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+     
+    header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 80px;
+        background: #ffffff;
+        box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+    }
+   header>nav{
+        width: 80%;
+        margin: 0 auto;
+        line-height: 80px;
+      height: 80px;
+    }
+    header .logo{
+        float: left;
+        height: 80px;
+    }
+    header .logo a{
+        float: left;
+        height: 80px;
+    }
+    header .logo img{
+        width: 80px;
+        height: 80px;
+    }
+    .header-list{
+        width: 100%;
+        float: left;
+      
+    }
+  
+  
+    .header-left-list li{
+        float: left;
+        margin: 0 20px 0;
+        
+    }
+    .header-left-list li a{
+        font-size: 18px;
+    }
+    header a{
+        color: #F05154;
+    }
+    .header-left-list li a:hover{
+       padding-bottom: 3px;
+        border-bottom:3px solid #F05154;
+    }
+    .header-userBox{
+        float: right;
+     
+        transition: all 0.3s linear;
+    }
+    .header-userBox li{
+        float: left;
+        margin:0 10px 0;
+    }
+    .header-userBox span{
+        font-size: 18px;
+        margin: 0;
+    }
+    #headerSearchInput{
+        border: none;
+        border-bottom: 2px solid #F05154;
+       padding-bottom: 5px;
+    }
+    #headerDropDown{
+
+        float: right;
+        font-size: 30px;
+        display: none;
+    }
+    @media screen and (max-width:992px) {
+        header{
+            height: 50px;
+        }
+        header .logo{
+            height: 50px;
+        }
+        header .logo a{
+            height: 50px;
+        }
+        header .logo a img{
+            height: 50px;
+            width: 50px;
+        }
+            .header-userBox{
+             display: none;
+            }
+            .header-left-list{
+                display: none;
+            }
+            #headerDropDown{
+                display: block;
+                font-size: 20px;
+                line-height: 50px;
+            }
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+            <nav>
+           
+            <div class="header-list">
+                <div class="logo">
+                    <a href="">
+                        <img src="../images/hjh-img/lg.png" alt="">
+                    </a>
+                   
+                </div>
+                <ul class="header-left-list">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">蛋糕</a></li>
+                    <li><a href="#">面包</a></li>
+                    <li><a href="#">饼干</a></li>
+                    <li><a href="#">饮品</a></li>
+                   
+                </ul>
+                <ul class="header-userBox">
+                        <li class="header-search">
+                            <input type="search" placeholder="请输入想要查找的内容" id="headerSearchInput">
+                            <a href="#">
+                                <span class="fa fa-search" aria-hidden="true">
+                                </span>
+                             </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="fa fa-bell"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="fa fa-user"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            <span class="fa fa-shopping-cart"></span>
+                        </a>
+                        </li>
+                </ul>
+                <div id='headerDropDown'>
+                    <a href="">
+                        <span class="fa fa-bars"></span>
+                    </a>
+                </div>
+            </div>
+            </nav>
+    </header>
+    <script>
+   
+    </script>
+</body>
+</html>

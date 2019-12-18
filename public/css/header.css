@@ -1,0 +1,84 @@
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+header>nav{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 80px;
+    height: 80px;
+}
+header .logo{
+    float: left;
+    height: 80px;
+}
+header .logo a{
+    float: left;
+    height: 80px;
+}
+header .logo img{
+    width: 80px;
+    height: 80px;
+}
+.header-list{
+    width: 100%;
+    float: left;
+
+}
+
+
+.header-left-list li{
+    float: left;
+    margin: 0 20px 0;
+
+}
+.header-left-list li a{
+    font-size: 18px;
+}
+header a{
+    color: #F05154;
+}
+.header-left-list li a:hover{
+    padding-bottom: 3px;
+    border-bottom:3px solid #F05154;
+}
+.header-userBox{
+    float: right;
+
+    transition: all 0.3s linear;
+}
+.header-userBox li{
+    float: left;
+    margin:0 10px 0;
+}
+.header-userBox span{
+    font-size: 18px;
+    margin: 0;
+}
+#headerSearchInput{
+    border: none;
+    border-bottom: 2px solid #F05154;
+    padding-bottom: 5px;
+}
+#headerDropDown{
+
+    float: right;
+    font-size: 30px;
+    display: none;
+}
+@media screen and (max-width:992px) {
+    .header-userBox{
+        display: none;
+    }
+    .header-left-list{
+        display: none;
+    }
+    #headerDropDown{
+        display: block;
+    }
+}

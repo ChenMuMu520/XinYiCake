@@ -1,0 +1,99 @@
+.nav {
+  width: 100%;
+  height: 80px;
+}
+.container {
+  min-width: 750px;
+  width: 80%;
+  height: auto;
+  margin: 50px auto;
+}
+.container > div {
+  margin-top: 20px;
+}
+.public-title {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 20px;
+}
+.order-information-content {
+  width: 100%;
+  height: auto;
+}
+.order-row {
+  width: 80%;
+  height: 30px;
+  padding: 10px 5% 10px 15%;
+}
+.order-row div {
+  width: 46%;
+  height: 30px;
+  line-height: 30px;
+}
+.order-row div:nth-child(2) {
+  margin-left: 4%;
+}
+.order-row div span {
+  font-size: 18px;
+}
+.order-row div span:first-child {
+  display: inline-block;
+  width: 90px;
+}
+.order-list {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-bottom: 50px;
+}
+.order-list-header {
+  width: 80%;
+  margin: 20px auto;
+  background: #f9f9f9;
+  color: #777;
+  height: 40px;
+  line-height: 40px;
+}
+.order-list-header div {
+  width: 20%;
+  text-align: center;
+  font-size: 14px;
+}
+.order-item {
+  width: 80%;
+  margin: 0 auto;
+}
+.order-item div {
+  width: 20%;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+}
+.order-item div:first-child {
+  line-height: 20px;
+}
+.sum-price {
+  position: absolute;
+  right: 10%;
+  bottom: 5px;
+  width: 150px;
+  text-align: center;
+  height: 24px;
+  line-height: 24px;
+  font-size: 18px;
+}
+.confirm-btn {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  background: #ffa653;
+  font-size: 20px;
+  margin-right: 10%;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=details-order.css.map */

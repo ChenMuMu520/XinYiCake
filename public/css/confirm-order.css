@@ -1,0 +1,272 @@
+.nav {
+  width: 100%;
+  height: 80px;
+}
+.container {
+  width: 80%;
+  min-width: 1150px;
+  height: auto;
+  margin: 50px auto;
+}
+.address-header {
+  width: 100%;
+  height: auto;
+}
+.title {
+  width: 140px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #777;
+  margin-top: 20px;
+}
+.title:first-child {
+  margin-top: 0;
+}
+.title span {
+  font-size: 16px;
+}
+.manage-address,
+.add-address {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #777;
+  border-radius: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.msg-content {
+  width: 100%;
+  margin-top: 20px;
+  height: auto;
+  border: 1px solid #777;
+}
+.dispatching-msg {
+  height: 150px;
+}
+.commodity-msg {
+  height: auto;
+}
+.order-list-header {
+  margin: 20px;
+  background: #f9f9f9;
+  height: 40px;
+  line-height: 40px;
+}
+.order-list-header div {
+  width: 20%;
+  text-align: center;
+  font-size: 14px;
+}
+.order-item {
+  margin: 20px;
+}
+.order-item div {
+  width: 20%;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+}
+.order-item div:first-child {
+  position: relative;
+  line-height: 0;
+}
+.order-item div:first-child a {
+  position: absolute;
+  left: 10%;
+  top: 20px;
+}
+.order-item div:first-child span {
+  width: 80px;
+  height: 24px;
+  line-height: 24px;
+}
+.order-item div:last-child {
+  width: 100%;
+  height: 20px;
+  border: 1px solid #777;
+  text-indent: 20px;
+  line-height: 20px;
+  text-align: left;
+}
+.product-name {
+  position: absolute;
+  right: 0;
+  top: 34px;
+}
+.product-size {
+  position: absolute;
+  right: 0;
+  top: 54px;
+}
+.receiver-address {
+  padding-bottom: 15px;
+}
+.address-msg {
+  margin-left: 40px;
+  margin-top: 5px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 16px;
+}
+.address-msg:first-child {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.dispatching-time,
+.dispatching-way {
+  width: 100%;
+  height: auto;
+}
+.dispatching {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  border: 1px solid #777;
+  margin-left: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.date-choose {
+  margin-top: 25px;
+  margin-left: 30px;
+}
+.date-choose input {
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  text-indent: 5px;
+}
+.date-choose input::-webkit-inner-spin-button {
+  visibility: hidden;
+}
+.date-choose input::-webkit-clear-button {
+  visibility: hidden;
+}
+.time-choose {
+  margin-top: 25px;
+  margin-left: 30px;
+}
+.time-choose select {
+  width: 150px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 16px;
+  text-indent: 10px;
+}
+.way-choose {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.way-choose div {
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #777;
+  text-align: center;
+  font-size: 16px;
+}
+.way-choose .oneself-get {
+  margin-left: 30px;
+}
+.pay-msg {
+  width: 100%;
+  height: 80px;
+}
+.pay-msg div {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #777;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.pay-msg .pay-way {
+  margin-left: 20px;
+}
+.pay-msg .pay-online {
+  width: 150px;
+  font-size: 16px;
+  margin-left: 30px;
+}
+.order-form {
+  width: 100%;
+  height: 260px;
+  border: 1px solid #777;
+  margin-top: 20px;
+  position: relative;
+}
+.order-form .leave-words {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 40%;
+  height: auto;
+}
+.words-title {
+  font-size: 18px;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+.words-content {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+}
+.words-content textarea {
+  width: 100%;
+  height: 100px;
+  font-size: 16px;
+  padding: 15px;
+  resize: none;
+}
+.words-content textarea::placeholder {
+  color: #aa9f9e;
+  font-size: 14px;
+}
+.confirm-msg {
+  width: 220px;
+  height: auto;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+.confirm-title {
+  font-size: 18px;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+.particular-msg {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+}
+.particular-msg p {
+  height: 30px;
+  line-height: 30px;
+}
+.particular-msg span {
+  font-size: 14px;
+  display: inline-block;
+  width: 70px;
+  text-align: right;
+}
+.sure {
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  background: #ffa653;
+  color: white;
+  right: 100px;
+  bottom: 20px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=confirm-order.css.map */

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+ 
+    <link rel="stylesheet" href="../util/font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: '微软雅黑';
+        }
+      
+        a{
+            text-decoration: none;
+            color: #333333;
+        }
+        li{
+            list-style: none;
+        }
+    
+    .cakeHeadDemoBox{
+        background: #ffffff;
+        width: 65%;
+        padding: 0 2.5% 0;
+        margin: 0 auto;
+        overflow: hidden;
+        box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.1);
+       
+    }
+    .bigImgBox img{
+        width: 100%;
+    }
+    .smallImgBox{
+        width: 100%;
+      overflow: hidden;
+       
+    }
+    .smallImgBox ul{
+   
+        margin: 0 auto;
+    }
+    .smallImgBox ul li{
+        float: left;
+        width: 25%;
+        border: 0.4vw solid transparent;
+      
+    }
+    .smallImgBox ul li:hover{
+        border: 0.4vw solid #F05154;
+    }
+    .smallImgBox ul li img{
+        width:100%;
+    }
+   .cakeSimpleDes .top .cakeName{
+       font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        color: #F05154;
+    }
+    .cakeSimpleDes{
+        width: 40%;
+       
+        float: left;
+        color: #333333;
+    }
+    .cakeSimpleDes .cakeDes{
+        font-size: 16px;
+        color: #999999;
+        line-height: 50px;
+        
+    }
+   
+    .cakeSimpleDes .left{
+        float: left;
+        
+    }
+    .cakeSimpleDes .price{
+        color: #F05154;
+        font-size: 20px;
+      line-height: 30px;
+            float: right;
+
+    }
+    .cakeTag a{
+        font-size: 14px;
+        color: #F05154;
+        text-decoration: none;
+        border: 1px solid #F05154;
+        border-radius: 5px;
+        padding: 0 5px 0;
+    }
+    .cakeSimpleDes .cakeDiscounts{
+        border-top: 1px solid #F05154;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+    .clear-fix::after{
+        content: '';
+        clear: both;
+        display: block;
+    }
+    .cakeSimpleDes .discountsTitle{
+        padding-top: 10px;
+        color: #F05154;
+       
+    }
+    .cakeSimpleDes .discountsContentTag{
+        background: #F05154;
+        color: white;
+        font-size: 12px;
+         border-radius: 5px;
+        padding: 5px;
+        display: inline-block;
+    }
+    .discountsContent{
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    .rightBuy{
+        float: left;
+        width: 50%;
+        margin-left: 10%;
+    }
+    .rightBuy .title{
+        font-size: 12px;
+        line-height: 30px;
+        color: #999999;
+    }
+    .rightBuy .menu{
+        font-size: 12px;
+    }
+    .rightBuy .menu .opactionBox>div{
+        float: left;
+        width: 25%;
+        text-align: center;
+        background: #f9f9f9;
+        line-height: 50px;
+        border-bottom: 1px solid #F05154;
+    }
+    .rightBuy .menu .opactionBox .checked{
+        border: 1px solid #F05154;
+        background: white;
+        border-bottom: 1px solid rgba(0,0,0,0);
+    }
+    .rightBuy .opactionContent>div{
+        text-align: center;
+        width: 25%;
+        line-height: 50px;
+            float: left;
+    }
+    .opactionContent{
+        border-bottom: 2px solid #ebebeb;
+    }
+    .rightBuy .buyBox{
+        margin-top: 15px;
+    }
+    .rightBuy .buyBox>div{
+        float: left;
+        width: 49%;
+        background: #F05154;
+
+        line-height: 50px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .rightBuy .buyBox>div a{
+        float: left;
+        width: 100%;
+        height: 100%;
+        color: white;
+    }
+    .rightBuy .buyBox>.nowBuy{
+        margin-left: 2%;
+    }
+    .cakeDetailed{
+        width: 100%;
+        margin-top: 20px;
+        padding-top: 20px;
+      border-top: 1px solid #999999;
+        
+    }
+    .cakeDetailed img{
+        width: 100%;
+    }
+    .userMsgBox{
+        margin-top: 50px;
+    }
+    .userMsgBox .title{
+        font-weight: normal;
+        font-size: 20px;
+       background: #F05154;
+       color: #ffffff;
+       text-indent: 1em;
+       line-height: 30px;
+    }
+    .userHead{
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            float: left;
+        }
+        .userHead img{
+           
+           width: 60px;
+           margin-top: 30px;
+           position: relative;
+           top: -15px;
+        }
+        .userMsgBox .userMsg{
+           
+            line-height: 40px;
+            font-size: 12px;
+            color: #999999;
+        }
+        .userMsgBox .userContent{
+           
+            line-height: 5px;
+            font-size: 12px;
+        }
+        .userMsgBox .user1{
+            margin-top: 10px;
+        }
+        
+       
+    @media screen and (max-width:992px) {
+        .cakeHeadDemoBox{
+            width: 100%;
+           
+        }
+       
+        .discountsContent{
+            margin-left: 0;
+        }
+        .cakeSimpleDes{
+                width: 100%;
+                padding: 0 1px 0;
+        }
+        .rightBuy{
+            width: 100%;
+            margin-left: 0;
+            padding: 0 1px 0;
+        }
+        .rightBuy .title{
+            text-align: center;
+        }
+      
+        
+    }
+    @media screen and (max-width:768px){
+        .rightBuy .opactionContent>div{
+            
+            font-size: 8px;
+        }
+        .userMsgBox .userMsg{
+            font-size: 10px;
+        }
+        .userMsgBox .userContent{
+            font-size: 10px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="cakeHeadDemoBox">
+        <div class="bigImgBox">
+            <img src="../images/hjh-img/cake1.jpg" alt="">
+        </div>
+        <div class="smallImgBox">
+            <ul>
+                <li><img src="../images/hjh-img/cake1.jpg" alt=""></li>
+                <li><img src="../images/hjh-img/cake1.jpg" alt=""></li>
+                <li><img src="../images/hjh-img/cake1.jpg" alt=""></li>
+                <li><img src="../images/hjh-img/cake1.jpg" alt=""></li>
+               
+            </ul>
+        </div>
+        <div class="box clear-fix">
+
+       
+            <div class="cakeSimpleDes">
+                <div class="top clear-fix">
+                    <div class="left">
+                        <h1 class="cakeName">榴莲飘飘</h1>
+                            <p class="cakeDes">榴莲蛋糕</p>
+
+                                <div class="cakeTag">
+                                <a href="#">新品</a>
+                                <a href="#">人气</a>
+                                </div>
+                 </div> 
+                 <div class="price">￥998</div>      
+            </div>
+           
+        
+            <div class="cakeDiscounts">
+                <div class="discountsTitle">
+                    <span class="fa fa-tag"></span>
+                    优惠促销
+                </div>
+                <div class="discountsContent">
+                    <a href="">
+                   <span class="discountsContentTag">限时满减</span> 满998-98
+                </a>
+                </div>
+            </div>
+
+          
+           
+        </div>
+        <div class="rightBuy">
+            <div class="title">
+                建议食用人数 
+            </div>
+            <div class="menu clear-fix">
+                <div class="opactionBox clear-fix">
+                    <div class="opaction1 checked">
+                    2-4人食
+                    </div>
+                    <div class="opaction1">
+                    5-8人食
+                    </div>
+                    <div class="opaction1">
+                    10-12人食
+                    </div>
+                    <div class="opaction1">
+                    15-20人食
+                    </div>
+                </div>
+                <div class="opactionContent clear-fix">
+                    <div class="tableware">
+                        <span class="fa fa-cutlery"></span>
+                        含5套餐具 
+                    </div>
+                    <div class="cakeArea">
+                        <span class="fa fa-birthday-cake"></span>
+                        约13x13x4cm
+                    </div>
+                    <div class="cakeScale">
+                        <span class="fa fa-balance-scale"></span>
+                        约515g
+                    </div>
+                    <div class="cakeSugar">
+                        甜度:
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                       
+                    </div>
+                </div>
+                <div class="buyBox">
+                    <div class="addBuyCar">
+                       <a href="">加入购物车</a> 
+                    </div>
+                    <div class="nowBuy">
+                        <a href="">立即购买</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div class="cakeDetailed">
+
+       <img src="../images/hjh-img/cakeMsg.jpg">
+       <img src="./cakeMsg2.jpg">
+    </div>
+    <div class="userMsgBox">
+        <h3 class="title">用户评论</h3>
+        <div class="content">
+            <div class="user1 clear-fix">
+                <div class="userHead">
+                    <img src="../images/hjh-img/cake1.jpg" alt="">
+                </div>
+                <div class="userMsg">
+                        <span class="userName">
+                            龙叔
+                        </span>
+                        <span class="userSpec">
+                            规格：5-8人食
+                        </span>
+                        <span class="userTime">
+                            2019-12-16 12:31:19
+                        </span>
+                </div>
+                
+                <div class="userContent">
+                    真香
+                </div>
+            </div>
+            <div class="user1 clear-fix">
+                <div class="userHead">
+                    <img src="../images/hjh-img/cake1.jpg" alt="">
+                </div>
+                <div class="userMsg">
+                        <span class="userName">
+                            龙叔
+                        </span>
+                        <span class="userSpec">
+                            规格：5-8人食
+                        </span>
+                        <span class="userTime">
+                            2019-12-16 12:31:19
+                        </span>
+                </div>
+                
+                <div class="userContent">
+                    真香
+                </div>
+            </div>
+            <div class="user1 clear-fix">
+                <div class="userHead">
+                    <img src="../images/hjh-img/cake1.jpg" alt="">
+                </div>
+                <div class="userMsg">
+                        <span class="userName">
+                            龙叔
+                        </span>
+                        <span class="userSpec">
+                            规格：5-8人食
+                        </span>
+                        <span class="userTime">
+                            2019-12-16 12:31:19
+                        </span>
+                </div>
+                
+                <div class="userContent">
+                    真香
+                </div>
+            </div>
+            <div class="user1 clear-fix">
+                <div class="userHead">
+                    <img src="../images/hjh-img/cake1.jpg" alt="">
+                </div>
+                <div class="userMsg">
+                        <span class="userName">
+                            龙叔
+                        </span>
+                        <span class="userSpec">
+                            规格：5-8人食
+                        </span>
+                        <span class="userTime">
+                            2019-12-16 12:31:19
+                        </span>
+                </div>
+                
+                <div class="userContent">
+                    真香
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+   <script>
+   
+   </script>
+</body>
+</html>
