@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>确认订单</title>
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/header.css" type="text/css">
+    <link rel="stylesheet" href="../css/footer.css" type="text/css">
+    <link rel="stylesheet" href="../css/confirm-order.css" type="text/css">
+    <link rel="stylesheet" href="../fonts/font-awesome-4.7.0/css/font-awesome.css">
+    <script type="text/javascript" src="../util/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="../js/confirm-order.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+
+            <div class="header-list">
+                <div class="logo">
+                    <a href="">
+                        <img src="../images/cl-img/logo.png" alt="">
+                    </a>
+
+                </div>
+                <ul class="header-left-list">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">蛋糕</a></li>
+                    <li><a href="#">面包</a></li>
+                    <li><a href="#">饼干</a></li>
+                    <li><a href="#">饮品</a></li>
+
+                </ul>
+                <ul class="header-userBox">
+                    <li class="header-search">
+                        <input type="search" placeholder="请输入想要查找的内容" id="headerSearchInput">
+                        <a href="#">
+                                            <span class="fa fa-search" aria-hidden="true">
+                                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-bell"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-user"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-shopping-cart"></span>
+                        </a>
+                    </li>
+                </ul>
+                <div id='headerDropDown'>
+                    <a href="">
+                        <span class="fa fa-bars"></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--网页头占位-->
+    <div class="nav"></div>
+    <!--网页内容-->
+    <div class="container">
+        <!--收货地址-->
+        <div class="address-header">
+            <div class="title fl">
+                <span><i class="fa fa-map-marker"></i></span>&nbsp;&nbsp;
+                <span>收货地址</span>
+            </div>
+            <div class="add-address fr">新增地址</div>
+            <div class="manage-address fr"><a href="personal.html">管理收货地址</a></div>
+            <div class="clearFix"></div>
+        </div>
+        <!--收货地址内容-->
+        <div class="receiver-address msg-content">
+            <div class="address-msg"><label for=""><input type="radio" name="address" value="1" checked>&nbsp;&nbsp;默认地址</label></div>
+            <div class="address-msg"><label for=""><input type="radio" name="address" value="2">&nbsp;&nbsp;天府二街1325高新青年公寓1栋</label></div>
+            <div class="address-msg"><label for=""><input type="radio" name="address" value="3">&nbsp;&nbsp;天府二街云华路333号</label>
+            </div></div>
+        <!--配送信息-->
+        <div class="title">
+            <span><i class="fa fa-truck"></i></span>&nbsp;&nbsp;
+            <span>配送信息</span>
+        </div>
+        <!--配送信息内容-->
+        <div class="dispatching-msg msg-content">
+            <div class="dispatching-time">
+                <div class="dispatching fl">配送时间：</div>
+                <div class="date-choose fl"><input type="date"></div>
+                <div class="time-choose fl">
+                    <select name="" id="">
+                        <option value="0">选择配送时间</option>
+                        <option value="1">10:00-11:00</option>
+                        <option value="2">11:00-12:00</option>
+                        <option value="3">13:00-14:00</option>
+                        <option value="4">14:00-15:00</option>
+                        <option value="5">15:00-16:00</option>
+                        <option value="6">16:00-17:00</option>
+                        <option value="6">17:00-18:00</option>
+                        <option value="6">18:00-19:00</option>
+                        <option value="6">19:00-20:00</option>
+                    </select>
+                </div>
+                <div class="clearFix"></div>
+            </div>
+            <div class="dispatching-way">
+                <div class="dispatching fl">配送方式：</div>
+                <div class="way-choose fl">
+                    <div class="dispatching-direct fl">商家直送</div>
+                    <div class="oneself-get fl">门店自提</div>
+                    <div class="clearFix"></div>
+                </div>
+                <div class="clearFix"></div>
+            </div>
+        </div>
+        <!--商品信息-->
+        <div class="title">
+            <span><i class="fa fa-shopping-cart"></i></span>&nbsp;&nbsp;
+            <span>商品信息</span>
+        </div>
+        <!--商品信息内容-->
+        <div class="commodity-msg msg-content">
+            <div class="order-list-header">
+                <div class="fl">商品</div>
+                <div class="fl">贺卡</div>
+                <div class="fl">单价</div>
+                <div class="fl">数量</div>
+                <div class="fl">小计</div>
+                <div class="clearFix"></div>
+            </div>
+            <div class="order-item">
+                <div class="product-img fl">
+                    <a href=""><img src="../images/cl-img/草莓提拉.jpg" alt=""></a>
+                    <span class="product-name">草莓奶昔</span>
+                    <span class="product-size">25cm×25cm</span>
+                </div>
+                <div class="product-congratulate fl">生日快乐</div>
+                <div class="product-price fl"><span>￥</span><span>88.00</span></div>
+                <div class="product-num fl">5</div>
+                <div class="product-money fl"><span>￥</span><span>398.00</span></div>
+                <div class="clearFix"></div>
+                <div class="product-sale">优惠：今天没有优惠，赠品：赠小蛋糕一块</div>
+            </div>
+            <div class="order-item">
+                <div class="product-img fl">
+                    <a href=""><img src="../images/cl-img/草莓提拉.jpg" alt=""></a>
+                    <span class="product-name">草莓奶昔</span>
+                    <span class="product-size">25cm×25cm</span>
+                </div>
+                <div class="product-congratulate fl">生日快乐</div>
+                <div class="product-price fl"><span>￥</span><span>88.00</span></div>
+                <div class="product-num fl">5</div>
+                <div class="product-money fl"><span>￥</span><span>398.00</span></div>
+                <div class="clearFix"></div>
+                <div class="product-sale">优惠：今天没有优惠，赠品：赠小蛋糕一块</div>
+            </div>
+        </div>
+        <!--支付信息-->
+        <div class="title">
+            <span><i class="fa fa-credit-card"></i></span>&nbsp;&nbsp;
+            <span>支付信息</span>
+        </div>
+        <!--支付信息内容-->
+        <div class="pay-msg msg-content">
+            <div class="pay-way fl">支付方式：</div>
+            <div class="pay-online fl">在线支付</div>
+        </div>
+        <!--留言信息-->
+        <div class="title">
+            <span><i class="fa fa-bars"></i></span>&nbsp;&nbsp;
+            <span>确认订单</span>
+        </div>
+        <!--订单信息-->
+        <div class="order-form">
+            <div class="leave-words fl">
+                <div class="words-title">留言：</div>
+                <div class="words-content">
+                    <textarea name="" id="words"  cols="30" rows="10" placeholder="有什么想对我们说的吗？请在这里写下。。。"></textarea>
+                </div>
+            </div>
+            <div class="confirm-msg fr">
+                <div class="confirm-title">订单详情：</div>
+                <div class="particular-msg">
+                    <p>
+                        <span class="details-money">商品金额：</span>
+                        <span class="money">￥298.00</span>
+                    </p>
+                    <p>
+                        <span class="details-money">配送费用：</span>
+                        <span class="money">￥5.00</span>
+                    </p>
+                    <p>
+                        <span class="details-money">优惠金额：</span>
+                        <span class="money">￥5.00</span>
+                    </p>
+                    <p>
+                        <span class="details-money">合计：</span>
+                        <span class="money">￥298.00</span>
+                    </p>
+                </div>
+            </div>
+            <div class="clearFix"></div>
+            <div class="sure">确认订单</div>
+        </div>
+    </div>
+    <footer>
+        <div class="content">
+            <div class="footer-txtBox">
+                <p>订购专线:<a href="tel:13699466635">xxxxxxxxx</a></p>
+                <p>客服电话:<a href="tel:13699466635">xxxxxxxxx</a></p>
+                <p>当日蛋糕配送截止下单时间：北京/上海：16:30；杭州/广州：14:00；天津：10:30；苏州/无锡/深圳：11:00</p>
+                <p>Copyright© xinyi蛋糕官网商城 2007-2019, 版权所有 京ICP备xxx号-x</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+
+</script>
+</html>
